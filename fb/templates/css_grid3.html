@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .ch1{
+            grid-area: c1;
+           background-image: url('/static/images/1.jfif');
+           background-size: cover;
+        }
+        .ch2{
+            grid-area: c2;
+            background-image: url('/static/images/2.jfif');
+            background-size: cover;
+        }
+        .ch3{
+            grid-area: c3;
+            background-image: url('/static/images/3.jfif');
+            background-size: cover;
+        }
+        .ch4{
+            grid-area: c4;
+            background-image: url('/static/images/4.jfif');
+            background-size: cover;
+        }
+        .ch5{
+            grid-area: c5;
+            background-image: url('/static/images/5.jfif');
+            background-size: cover;
+        }
+        .ch6{
+            grid-area: c6;
+            background-image: url('/static/images/6.jfif');
+            background-size: cover;
+        }
+        .ch7{
+            grid-area: c7;
+            background-image: url('/static/images/7.jfif');
+            background-size: cover;
+        }
+        .ch8{
+            grid-area: c8;
+            background-image: url('/static/images/8.jfif');
+            background-size: cover;
+        }
+        .ch9{
+            grid-area: c9;
+            background-image: url('/static/images/9.jfif');
+            background-size: cover;
+        }
+        .a1{
+            /* background-color: black; */
+            color: white;
+            height: 100vh;
+            display: grid; 
+             grid-template-areas: 'c1 c2 c2 c3 c4'
+            'c5 c2 c2 c6 c6'
+            'c7 c7 c8 c9 c9';
+            border: 3px solid red;
+            gap:5px;
+            
+        }
+        .a1 div{
+            /* border: 5px solid darkgoldenrod; */
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">
+   
+        <div class="ch1"></div>
+        <div class="ch2"></div>
+        <div class="ch3"></div>
+        <div class="ch4"></div>
+        <div class="ch5"></div>
+
+        <div class="ch6"></div>
+
+        <div class="ch7"></div>
+
+        <div class="ch8"></div>
+
+        <div class="ch9"></div>
+
+        
+    </div>
+</body>
+</html>

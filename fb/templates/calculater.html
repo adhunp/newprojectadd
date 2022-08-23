@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+
+    
+        table {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+  
+        input[type="button"] {
+            width: 100%;
+            padding: 20px 40px;
+            background-color: green;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+  
+        input[type="text"] {
+            padding: 20px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid black;
+            width: 20px;
+    
+        }
+    
+</style>
+<body>
+    <script>
+        function show(num){
+            document.getElementById("number").innerHTML = document.getElementById("number").innerHTML + num
+        }
+        function equal(){
+            var op2=document.getElementById('number').innerHTML;
+            if(op2){
+                document.getElementById('number').innerHTML = eval(op2)
+            }
+        }
+    </script>
+    <table border="1">
+        <form action="">
+            <tr name="op2">
+                <td colspan="4" name="number" id="number" ></td>
+             
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="+" onclick="show('+')"></td>
+                <td><input type="button" class="btn" value="-" onclick="show('-')"></td>
+                <td><input type="button" class="btn" value="*" onclick="show('*')"></td>
+                <td><input type="button" class="btn" value="/" onclick="show('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="7" onclick="show('7')"></td>
+                <td><input type="button" class="btn" value="8" onclick="show('8')"></td>
+                <td><input type="button" class="btn" value="9" onclick="show('9')"></td>
+                <td rowspan="4" style="height: 100px;"><input type="button" class="btn" value="=" onclick="equal()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="4" onclick="show('4')"></td>
+                <td><input type="button" class="btn" value="5" onclick="show('5')"></td>
+                <td><input type="button" class="btn" value="6" onclick="show('6')"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="1" onclick="show('1')"></td>
+                <td><input type="button" class="btn" value="2" onclick="show('2')"></td>
+                <td><input type="button" class="btn" value="3" onclick="show('3')"></td>
+            
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="0" onclick="show('0')"></td>
+                <td><input type="button" class="btn" value="." onclick="show('.')"></td>
+                <td><input type="button" class="btn" value="ac" onclick="show('ac')"></td>
+            </tr>
+        </form>
+        
+    </table>
+</body>
+</html>
